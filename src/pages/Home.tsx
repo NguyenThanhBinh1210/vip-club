@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div>
         <div className='pt-[160px] px-[33px]'>
-          <h1 className='mb-10 text-center text-[28px] md:text-[40px] max-w-[980px] md:mx-auto'>
+          <h1 className='mb-10 text-center text-[28px] md:text-[40px] max-w-[980px] md:mx-auto uppercase'>
             EXPERIENCE THE Let’s Win Club CASINO
           </h1>
         </div>
