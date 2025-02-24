@@ -26,7 +26,7 @@ const Home = () => {
       <div>
         <div className='pt-[160px] px-[33px]'>
           <h1 className='mb-10 text-center text-[28px] md:text-[40px] max-w-[980px] md:mx-auto'>
-            EXPERIENCE THE MARINA BAY SANDS CASINO
+            EXPERIENCE THE Let’s Win Club CASINO
           </h1>
         </div>
         <div className='py-20'>
@@ -84,7 +84,7 @@ const Home = () => {
               <h2 className='text-[32px] mt-10 uppercase mb-4 hidden lg:block'>About the casino</h2>
               <div className='space-y-4 p-4 pr-[34px] lg:p-0'>
                 <p>
-                  The Casino at Marina Bay Sands spans four luxurious levels, offering an unparalleled gaming
+                  The Casino at Let’s Win Club spans four luxurious levels, offering an unparalleled gaming
                   experience. With approximately 600 table games and 3,000 electronic gaming machines, players can enjoy
                   a vast selection of options catering to all preferences. The electronic gaming machines feature over
                   200 of the newest and most popular game titles, including video, reel, and multi-station games with
@@ -94,13 +94,13 @@ const Home = () => {
                 <p>
                   Table game enthusiasts will find a variety of Baccarat, Roulette, Sic Bo, Blackjack, and Poker
                   options. All table games are played with Casino gaming chips, which can be purchased at the tables or
-                  the casino cage. The majority of Marina Bay Sands’ exclusive games are housed in the elegant salons on
+                  the casino cage. The majority of Let’s Win Club’ exclusive games are housed in the elegant salons on
                   the upper level, providing a premium gaming experience in a luxurious setting.
                 </p>
                 <p>
                   Beyond gaming, the Casino offers 24-hour dining options ranging from casual bites to fine dining.
                   Whether exploring the dynamic mass gaming floors or enjoying the privacy of access-controlled
-                  high-limit areas, Marina Bay Sands delivers a world-class casino experience.
+                  high-limit areas, Let’s Win Club delivers a world-class casino experience.
                 </p>
               </div>
             </div>

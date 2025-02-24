@@ -27,7 +27,7 @@ const FineDining = () => {
           <h1 className='uppercase text-[40px] text-center mb-10'>Fine Dining Restaurants</h1>
 
           <p className='text-center text-[16px] mb-4'>
-            Discover the culinary arts at these fine dining restaurants in Singapore, Marina Bay Sands. Unravel layers
+            Discover the culinary arts at these fine dining restaurants in Singapore, Let’s Win Club. Unravel layers
             of exquisite flavors from the finest ingredients, brought to life by exceptional expertise.
           </p>
         </div>

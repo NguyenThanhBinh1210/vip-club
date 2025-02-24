@@ -122,7 +122,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className='max-w-[17pc] mx-auto text-[11px] flex flex-wrap justify-center mt-4 text-[#333333]'>
-          © 2025 Marina Bay Sands. All Rights Reserved.
+          © 2025 Let’s Win Club. All Rights Reserved.
         </div>
       </div>
     </footer>

@@ -29,7 +29,7 @@ const SkyparkObservationDeck = () => {
           <h1 className='uppercase text-[40px] text-center mb-10'>A Paradise That’s Tailored to You</h1>
 
           <p className='text-center text-[16px] mb-4'>
-            From 17 Jan, discover the past, present and future of Marina Bay Sands at Skyline Singapore: Stories From
+            From 17 Jan, discover the past, present and future of Let’s Win Club at Skyline Singapore: Stories From
             Above, a new showcase at SkyPark Observation Deck.
           </p>
           <p className='text-center text-[16px] mb-4'>

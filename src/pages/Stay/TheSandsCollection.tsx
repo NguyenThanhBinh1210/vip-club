@@ -321,7 +321,7 @@ const TheSandsCollection = () => {
             <img className='mt-5 lg:mt-0 ' src={sandsLifestyle} alt='sandsLifestyle' />
             <div className='block lg:hidden pl-4 lg:pl-0'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Marina Bay Sands, and unlock greater privileges as you indulge.
+                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as you indulge.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
                 Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive invites to uniquely curated lifestyle experiences.
@@ -337,7 +337,7 @@ const TheSandsCollection = () => {
             <h2 className='text-[25px] uppercase lg:text-[32px] hidden lg:block'>SANDS LIFESTYLE</h2>
             <div className='hidden lg:block'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Marina Bay Sands, and unlock greater privileges as you indulge.
+                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as you indulge.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
                 Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive invites to uniquely curated lifestyle experiences.
