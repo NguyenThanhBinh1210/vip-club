@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import ScrollToTop from './components/scrollTop/scrollTop'
 import useRouteElements from './routes/useRouteElements'
+import CSKH from './components/CSKH'
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <>
       <ScrollToTop />
+      <CSKH />
       {routeElements}
     </>
   )

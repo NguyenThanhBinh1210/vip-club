@@ -1,4 +1,4 @@
-import footerLogo from '~/assets/Logo_Wordmark.svg'
+import footerLogo from '~/assets/logo-01.png'
 import mbsAppStore from '~/assets/mbs-app-store.avif'
 import mbsGooglePlay from '~/assets/mbs-google-play.avif'
 import mbsFacebook from '~/assets/facebook.svg'
@@ -55,7 +55,7 @@ const Footer = () => {
   return (
     <footer className='bg-[#c5c6bc] pt-20 pb-10'>
       <div className='px-4 lg:px-20 2xl:mx-[180px] 2xl:px-0'>
-        <img src={footerLogo} alt='footerLogo' className='mx-auto mb-20' />
+        <img src={footerLogo} alt='footerLogo' className='mx-auto size-[100px] mb-20' />
         <div className='grid md:grid-cols-4 gap-x-10 gap-y-8 mb-20 '>
           <div>
             <Accordion title='Get to know us'>
@@ -103,13 +103,13 @@ const Footer = () => {
           </div>
           <div className='text-[#333333]'>
             <p className='mb-4'>Get inspired</p>
-            <p className='text-sm'>Subscribe to our newsletter for the latest updates</p>
-            <button className='mt-4 px-5 py-2 border border-black hover:opacity-60 transition-all duration-300'>
+            <p className='text-sm'>Đặt chỗ & Liên hệ nhanh</p>
+            <Link to={'/contact-now'}><button className='mt-4 px-5 py-2 border border-black hover:opacity-60 transition-all duration-300'>
               SUBSCRIBE
-            </button>
+            </button></Link>
           </div>
         </div>
-        <div className='max-w-[17pc] mx-auto text-[11px] uppercase flex flex-wrap justify-center '>
+        {/* <div className='max-w-[17pc] mx-auto text-[11px] uppercase flex flex-wrap justify-center '>
           <Link to={'/'} className='border-r border-black pr-4 mr-4'>
             Trademark Notice
           </Link>
@@ -120,7 +120,7 @@ const Footer = () => {
           <Link to={'/'} className='mt-3'>
             Terms of Use
           </Link>
-        </div>
+        </div> */}
         <div className='max-w-[17pc] mx-auto text-[11px] flex flex-wrap justify-center mt-4 text-[#333333]'>
           © 2025 Let’s Win Club. All Rights Reserved.
         </div>

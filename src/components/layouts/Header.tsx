@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logo from '~/assets/6170305031849493246 (1).jpg'
+import logo from '~/assets/logo-01.png'
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -122,11 +122,11 @@ const Header = () => {
         </div>
         <div className='flex justify-center items-center'>
           <Link to={'/'}>
-            <img className='h-[38px] w-[38px] rounded-full' src={logo} alt='logo' />
+            <img className='h-[55px] w-[55px] rounded-full' src={logo} alt='logo' />
           </Link>
         </div>
         <div className='flex items-center gap-2 justify-end'>
-          <Link to={'/booking'} className='uppercase'>
+          <Link to={'/contact-now'} className='uppercase'>
             <button
               className={`uppercase hover:opacity-65 transition-all duration-300 border  px-4 py-2 ${bgColor === 'linear-gradient(180deg,#ffffff,#ffffff)' ? 'border-black' : 'border-white text-white'
                 }`}

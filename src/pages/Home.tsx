@@ -1,24 +1,27 @@
-import bannerPC from '~/assets/casino-masthead-desktop-1920x823.avif'
-import bannerMobile from '~/assets/casino-masthead-mobile-1080x1440.avif'
-import bannerLandingModule1 from '~/assets/casino-landing-module-1-1920x1080.avif'
+
 import bannerLandingModule3 from '~/assets/casino-landing-module-3-1920x1080.webp'
-import bannerLandingMasthead from '~/assets/casino-landing-masthead-desktop-1920x1080.avif'
-import bannerLandingMastheadRight from '~/assets/about-the-casino-right-1.webp'
-import bannerLandingMastheadLeft from '~/assets/about-the-casino-left-1.webp'
+
+import hotram1 from '~/assets/Gaming-Salon-2048x1366.jpg'
+import hotram2 from '~/assets/Casino-Slot-Angle-1-2_S.jpg'
+import hoian from '~/assets/GHI0408-HDR-scaled.webp'
+import hoian2 from '~/assets/hoian2.webp'
+import hoian3 from '~/assets/hoian3.webp'
+import hotrambanner from '~/assets/hotrambannerpc.png'
 import rewardsClub from '~/assets/rewards-club.avif'
+import { ButtonBlack } from './Shop/Shopping'
 const Home = () => {
   return (
     <div>
       <div>
         <img
-          src={bannerPC}
+          src={hotrambanner}
           alt='bannerPC'
-          className='h-auto object-cover hidden md:block'
-          style={{ aspectRatio: '21/9' }}
+          className='h-auto object-cover hidden md:block w-full'
+        // style={{ aspectRatio: '21/9' }}
         />
         <img
-          src={bannerMobile}
-          alt='bannerMobile'
+          src={hotrambanner}
+          alt='hotrambanner'
           className='h-auto object-cover block md:hidden'
           style={{ aspectRatio: '3/4' }}
         />
@@ -32,56 +35,61 @@ const Home = () => {
         <div className='py-20'>
           <div className='pl-4 2xl:pl-[180px] lg:pl-[110px] lg:grid grid-cols-7 lg:gap-10'>
             <div className='lg:col-span-2'>
-              <h2 className='text-[25px] uppercase lg:text-[32px]'>Casino Entry Levy</h2>
+              <h2 className='text-[25px] uppercase lg:text-[32px]'>Sảnh VIP tại Hồ Tràm Casino</h2>
               <div className='hidden lg:block'>
                 <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
                   Get information on the general casino rules and conditions of entry.
                 </p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
-                  View details
-                  <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                <a href='tel:0909090909'>
+                  <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                    Liên hệ ngay
+                    <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
+                  </button></a>
               </div>
             </div>
             <div className='lg:col-span-5'>
-              <img className='mt-5 lg:mt-0 ' src={bannerLandingModule1} alt='bannerLandingModule1' />
+              <img className='mt-5 lg:mt-0 ' src={hotram1} alt='hotram1' />
               <div className='block lg:hidden'>
                 <p className='text-[15px] lg:text-[16px] mt-4 mb-8 text-[#333333]'>
                   Get information on the general casino rules and conditions of entry.
                 </p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
-                  View details
-                  <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                <a href='tel:0909090909'>
+                  <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                    Liên hệ ngay
+                    <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div className='px-4 lg:w-[59pc] mx-auto xl:w-[79pc] 2xl:w-[82pc]'>
           <img
-            style={{ aspectRatio: '16/9' }}
-            className='object-cover h-auto'
-            src={bannerLandingMasthead}
-            alt='bannerLandingMasthead'
+            // style={{ aspectRatio: '16/9' }}
+            className='object-cover h-auto w-full'
+            src={hotram2}
+            alt='hotram2'
           />
         </div>
         <div className='pt-40 pb-20'>
           <div className='pl-4'>
-            <h2 className='text-[25px] uppercase block lg:hidden'>About the casino</h2>
+            <h2 className='text-[25px] uppercase block lg:hidden'>Club Poker tại Danaciti</h2>
           </div>
           <div className='grid grid-cols-2 lg:grid-cols-3 gap-x-10 lg:w-[59pc] xl:w-[79pc] 2xl:w-[82pc] mx-auto'>
             <div>
               <img
-                className='lg:pt-[15pc] mt-[2pc] lg:mt-0'
-                src={bannerLandingMastheadLeft}
-                alt='bannerLandingMastheadLeft'
+                className='lg:pt-[15pc] mt-[2pc] lg:mt-0 object-cover aspect-[7/9] lg:aspect-[4.5/9]'
+                src={hoian2}
+                alt='hoian2'
+              // style={{ aspectRatio: '4.5/9' }}
+
               />
             </div>
             <div>
-              <img className='pt-[140pt] lg:pt-0' src={bannerLandingMastheadRight} alt='bannerLandingMastheadRight' />
+              <img className='pt-[140pt] lg:pt-0' src={hoian3} alt='hoian3' />
             </div>
             <div className='col-span-2 lg:col-span-1'>
-              <h2 className='text-[32px] mt-10 uppercase mb-4 hidden lg:block'>About the casino</h2>
+              <h2 className='text-[32px] mt-10 uppercase mb-4 hidden lg:block'>Club Poker tại Danaciti</h2>
               <div className='space-y-4 p-4 pr-[34px] lg:p-0'>
                 <p>
                   The Casino at Let’s Win Club spans four luxurious levels, offering an unparalleled gaming
@@ -91,17 +99,9 @@ const Home = () => {
                   betting levels to suit every player. Many slots offer enticing jackpots, including linked Progressive
                   Jackpots that grow as games are played.
                 </p>
-                <p>
-                  Table game enthusiasts will find a variety of Baccarat, Roulette, Sic Bo, Blackjack, and Poker
-                  options. All table games are played with Casino gaming chips, which can be purchased at the tables or
-                  the casino cage. The majority of Let’s Win Club’ exclusive games are housed in the elegant salons on
-                  the upper level, providing a premium gaming experience in a luxurious setting.
-                </p>
-                <p>
-                  Beyond gaming, the Casino offers 24-hour dining options ranging from casual bites to fine dining.
-                  Whether exploring the dynamic mass gaming floors or enjoying the privacy of access-controlled
-                  high-limit areas, Let’s Win Club delivers a world-class casino experience.
-                </p>
+                <a href='tel:0909090909'>
+                  <ButtonBlack className='ml-0 mt-10' title='Liên hệ ngay' />
+                </a>
               </div>
             </div>
           </div>
@@ -109,25 +109,29 @@ const Home = () => {
         <div className='py-20'>
           <div className='pl-4 2xl:pl-[180px] lg:pl-[110px] lg:grid grid-cols-7 lg:gap-10'>
             <div className='lg:col-span-2'>
-              <h2 className='text-[25px] uppercase lg:text-[32px]'>Events & Promotions</h2>
+              <h2 className='text-[25px] uppercase lg:text-[32px]'>Khu VIP tại Hoiana</h2>
               <div className='hidden lg:block'>
                 <p className='text-[15px] mt-4 mb-8 text-[#333333]'>Find out more about our Events & Promotions.</p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
-                  View details
-                  <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                <a href='tel:0909090909'>
+                  <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                    Liên hệ ngay
+                    <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
+                  </button>
+                </a>
               </div>
             </div>
             <div className='lg:col-span-5'>
-              <img className='mt-5 lg:mt-0 ' src={bannerLandingModule3} alt='bannerLandingModule3' />
+              <img className='mt-5 lg:mt-0 ' src={hoian} alt='hoian' />
               <div className='block lg:hidden'>
                 <p className='text-[15px] lg:text-[16px] mt-4 mb-8 text-[#333333]'>
                   Find out more about our Events & Promotions.
                 </p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
-                  View details
-                  <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                <a href='tel:0909090909'>
+                  <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                    Liên hệ ngay
+                    <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -152,10 +156,10 @@ const Home = () => {
                 <li>Level 2 Ruby Slots Entrance</li>
                 <li>Level 2 Apex Grand Entrance</li>
               </ul>
-              <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+              {/* <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                 View details
                 <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -169,10 +173,10 @@ const Home = () => {
                   Our commitment to creating unforgettable experiences extends to every facet of our resort – right down
                   to the casino floor.
                 </p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                {/* <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                   View details
                   <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                </button> */}
               </div>
             </div>
             <div className='lg:col-span-5'>
@@ -183,16 +187,16 @@ const Home = () => {
                   Our commitment to creating unforgettable experiences extends to every facet of our resort – right down
                   to the casino floor.
                 </p>
-                <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
+                {/* <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                   View details
                   <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

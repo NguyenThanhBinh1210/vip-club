@@ -16,6 +16,8 @@ import FineDining from '~/pages/Dine/FineDining'
 import More from '~/pages/More'
 import WhatOnAtMbs from '~/pages/WhatOnAtMbs'
 import Booking from '~/pages/Booking'
+import About from '~/pages/About'
+import ContactNow from '~/pages/ContactNow'
 
 const useRouteElements = () => {
   const routeElements = useRoutes([
@@ -26,6 +28,22 @@ const useRouteElements = () => {
       element: (
         <HomeLayout>
           <Home />
+        </HomeLayout>
+      )
+    },
+    {
+      path: '/about',
+      element: (
+        <HomeLayout>
+          <About />
+        </HomeLayout>
+      )
+    },
+    {
+      path: '/contact-now',
+      element: (
+        <HomeLayout>
+          <ContactNow />
         </HomeLayout>
       )
     },
