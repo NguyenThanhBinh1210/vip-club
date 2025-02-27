@@ -31,7 +31,7 @@ const TheSandsCollection = () => {
       </div>
       <div className='pt-[160px] pb-10'>
         <div className='max-w-[888px] mx-auto px-[33px] lg:px-0'>
-          <h1 className='uppercase text-[40px] text-center mb-10'>The Sands Collection</h1>
+          <h1 className='uppercase text-[40px] text-center mb-10'>Let's Vip Collection</h1>
           <p className='text-center text-[16px] mb-4'>
             Our newly refreshed Sands Collection of rooms and suites are urban sanctuaries filled with thoughtful
             details and artful objet drawn from the finest in local and global design.
@@ -62,7 +62,8 @@ const TheSandsCollection = () => {
                 setCurrentIndex(currentIndex + 1)
               }
             }}
-            className={`${currentIndex === dataSlide.length - 3 ? 'opacity-0 pointer-events-none' : 'opacity-100'} absolute hover:bg-gray-200 transition-all duration-300 z-10 right-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
+            className={`${currentIndex === dataSlide.length - 3 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              } absolute hover:bg-gray-200 transition-all duration-300 z-10 right-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -85,7 +86,8 @@ const TheSandsCollection = () => {
                 setCurrentIndex(currentIndex - 1)
               }
             }}
-            className={`${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'} absolute hover:bg-gray-200 transition-all duration-300 z-10 left-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
+            className={`${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              } absolute hover:bg-gray-200 transition-all duration-300 z-10 left-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -119,7 +121,6 @@ const TheSandsCollection = () => {
                 </p>
                 <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  relative hover:opacity-60  group transition-all duration-300'>
                   Discover more
-
                   <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
                 </button>
               </div>
@@ -169,7 +170,8 @@ const TheSandsCollection = () => {
                 setCurrentIndex(currentIndex + 1)
               }
             }}
-            className={`${currentIndex === dataSlide.length - 3 ? 'opacity-0 pointer-events-none' : 'opacity-100'} absolute hover:bg-gray-200 transition-all duration-300 z-10 right-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
+            className={`${currentIndex === dataSlide.length - 3 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              } absolute hover:bg-gray-200 transition-all duration-300 z-10 right-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -192,7 +194,8 @@ const TheSandsCollection = () => {
                 setCurrentIndex(currentIndex - 1)
               }
             }}
-            className={`${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'} absolute hover:bg-gray-200 transition-all duration-300 z-10 left-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
+            className={`${currentIndex === 0 ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              } absolute hover:bg-gray-200 transition-all duration-300 z-10 left-5 top-1/2 -translate-y-1/2 bg-gray-300 cursor-pointer rounded-full p-2`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -238,12 +241,11 @@ const TheSandsCollection = () => {
         <div className='grid lg:grid-cols-4 gap-x-5 lg:w-[59pc] 2xl:w-[978pt] mx-auto'>
           <div></div>
           <p className='text-center text-[16px] mb-4 col-span-2 mt-4'>
-            Make the most out of your visit with a curated itinerary just for you.
-            Whether you’re looking to unwind with friends, spend quality time with the family, or surprise your partner with a romantic getaway, our itineraries have everything you need for an unforgettable visit.
+            Make the most out of your visit with a curated itinerary just for you. Whether you’re looking to unwind with
+            friends, spend quality time with the family, or surprise your partner with a romantic getaway, our
+            itineraries have everything you need for an unforgettable visit.
           </p>
-          <div>
-
-          </div>
+          <div></div>
         </div>
         <p className='text-center text-[16px]  mt-10 font-medium mb-20'>SELECT AN OCCASION</p>
         <div className='lg:w-[59pc] 2xl:w-[978pt] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-10'>
@@ -285,10 +287,15 @@ const TheSandsCollection = () => {
             <h2 className='text-[25px] uppercase lg:text-[32px]'>A PRIVATE OASIS BETWEEN WORLDS</h2>
             <div className='hidden lg:block'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Discover our new Sands Collection, which is intentionally crafted to feel inviting, generous and refined at every turn.
+                Discover our new Sands Collection, which is intentionally crafted to feel inviting, generous and refined
+                at every turn.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
-                Feel your cares melt away in our deeply calming, elegant guestrooms dressed in soothing earth tones, polished marble and brushed metal accents, each framing stunning vistas. A wealth of luxurious comforts along with specially co-created objets with skilful regional artisans — from Bynd Artisan’s supple, practical leather holders to Legle Asia’s sleek porcelainware — ensure a sophisticated, uniquely memorable stay.
+                Feel your cares melt away in our deeply calming, elegant guestrooms dressed in soothing earth tones,
+                polished marble and brushed metal accents, each framing stunning vistas. A wealth of luxurious comforts
+                along with specially co-created objets with skilful regional artisans — from Bynd Artisan’s supple,
+                practical leather holders to Legle Asia’s sleek porcelainware — ensure a sophisticated, uniquely
+                memorable stay.
               </p>
               <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                 Discover more
@@ -300,10 +307,15 @@ const TheSandsCollection = () => {
             <img className='mt-5 lg:mt-0 ' src={oasis} alt='oasis' />
             <div className='block lg:hidden'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Discover our new Sands Collection, which is intentionally crafted to feel inviting, generous and refined at every turn.
+                Discover our new Sands Collection, which is intentionally crafted to feel inviting, generous and refined
+                at every turn.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
-                Feel your cares melt away in our deeply calming, elegant guestrooms dressed in soothing earth tones, polished marble and brushed metal accents, each framing stunning vistas. A wealth of luxurious comforts along with specially co-created objets with skilful regional artisans — from Bynd Artisan’s supple, practical leather holders to Legle Asia’s sleek porcelainware — ensure a sophisticated, uniquely memorable stay.
+                Feel your cares melt away in our deeply calming, elegant guestrooms dressed in soothing earth tones,
+                polished marble and brushed metal accents, each framing stunning vistas. A wealth of luxurious comforts
+                along with specially co-created objets with skilful regional artisans — from Bynd Artisan’s supple,
+                practical leather holders to Legle Asia’s sleek porcelainware — ensure a sophisticated, uniquely
+                memorable stay.
               </p>
               <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                 View details
@@ -314,21 +326,23 @@ const TheSandsCollection = () => {
         </div>
       </div>
       <div className='py-20'>
-        <div className='pr-4 lg:pr-0 2xl:pr-[180px] lg:pr-[110px] lg:grid grid-cols-7 lg:gap-10'>
+        <div className='pr-4 2xl:pr-[180px] lg:pr-[110px] lg:grid grid-cols-7 lg:gap-10'>
           <div className='lg:col-span-5'>
             <h2 className='text-[25px] uppercase lg:text-[32px] lg:hidden px-4'>SANDS LIFESTYLE</h2>
 
             <img className='mt-5 lg:mt-0 ' src={sandsLifestyle} alt='sandsLifestyle' />
             <div className='block lg:hidden pl-4 lg:pl-0'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as you indulge.
+                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited
+                rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as
+                you indulge.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
-                Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive invites to uniquely curated lifestyle experiences.
+                Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive
+                invites to uniquely curated lifestyle experiences.
               </p>
               <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                 Discover more
-
                 <div className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-black group-hover:opacity-60 group-hover:w-[70%] transition-all duration-300'></div>
               </button>
             </div>
@@ -337,10 +351,13 @@ const TheSandsCollection = () => {
             <h2 className='text-[25px] uppercase lg:text-[32px] hidden lg:block'>SANDS LIFESTYLE</h2>
             <div className='hidden lg:block'>
               <p className='text-[15px] mt-4 mb-4 text-[#333333]'>
-                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as you indulge.
+                Make the most of your visit ― join the most generous rewards programme in Singapore. Earn unlimited
+                rewards instantly as you shop, dine, play and stay at Let’s Win Club, and unlock greater privileges as
+                you indulge.
               </p>
               <p className='text-[15px] mt-4 mb-8 text-[#333333]'>
-                Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive invites to uniquely curated lifestyle experiences.
+                Our esteemed members enjoy priority access to highly sought-after events and restaurants, and exclusive
+                invites to uniquely curated lifestyle experiences.
               </p>
               <button className='uppercase text-[15px]  pt-3 pb-2.5 px-4  absolute hover:opacity-60  group transition-all duration-300'>
                 Discover more
@@ -348,7 +365,6 @@ const TheSandsCollection = () => {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>

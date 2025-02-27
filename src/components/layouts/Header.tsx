@@ -65,7 +65,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 z-50 w-full py-[11px] px-[30px] grid grid-cols-3 transition-all ease-in-out duration-500 ${isVisible ? 'translate-y-0' : 'translate-y-[-100%]'
+        className={`fixed top-0 z-50 w-full  px-[30px] grid grid-cols-3 transition-all ease-in-out duration-500 ${isVisible ? 'translate-y-0' : 'translate-y-[-100%]'
           }`}
         style={{
           backgroundImage: bgColor,
@@ -122,7 +122,7 @@ const Header = () => {
         </div>
         <div className='flex justify-center items-center'>
           <Link to={'/'}>
-            <img className='h-[55px] w-[55px] rounded-full' src={logo} alt='logo' />
+            <img className='size-20 rounded-full' src={logo} alt='logo' />
           </Link>
         </div>
         <div className='flex items-center gap-2 justify-end'>
@@ -131,7 +131,7 @@ const Header = () => {
               className={`uppercase hover:opacity-65 transition-all duration-300 border  px-4 py-2 ${bgColor === 'linear-gradient(180deg,#ffffff,#ffffff)' ? 'border-black' : 'border-white text-white'
                 }`}
             >
-              Reserve
+              Đặt ngay
             </button>
           </Link>
         </div>
@@ -262,8 +262,8 @@ const Header = () => {
             {/* <Link onClick={toggleMenu} to={'/expo'} className={` flex items-center gap-4 uppercase group `}>
               Expo and Convention{' '}
             </Link> */}
-            <Link onClick={toggleMenu} to={'/more'} className={` flex items-center gap-4 uppercase group `}>
-              More
+            <Link onClick={toggleMenu} to={'/about-us'} className={` flex items-center gap-4 uppercase group `}>
+              About us
             </Link>
           </div>
         </div>
@@ -272,7 +272,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'stay' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -281,13 +284,13 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <p className='text-sm text-[#666666] mb-5'>Rooms & Suites</p>
             <div className='space-y-3 flex flex-col uppercase'>
               <Link onClick={toggleMenu} to={'/hotel/the-sands-collection'} className='hover:opacity-65'>
-                The Sands Collection
+                Let's Vip Collection
               </Link>
               <Link onClick={toggleMenu} to={'/hotel/the-paiza-collection'} className='hover:opacity-65'>
                 The Paiza Collection
@@ -322,7 +325,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'shop' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -331,7 +337,7 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <div className='space-y-3 flex flex-col uppercase'>
@@ -373,7 +379,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'dine' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -382,7 +391,7 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <div className='space-y-3 flex flex-col uppercase'>
@@ -430,7 +439,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'seedo' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -439,7 +451,7 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <div className='space-y-3 flex flex-col uppercase'>
@@ -495,7 +507,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'paiza' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -504,7 +519,7 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <div className='space-y-3 flex flex-col uppercase'>
@@ -538,7 +553,10 @@ const Header = () => {
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'Rewards' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
       >
-        <div onClick={() => setIsNavOpen('')} className='lg:hidden absolute top-[4.5rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'>
+        {/* <div
+          onClick={() => setIsNavOpen('')}
+          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
+        >
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
             <path
               fillRule='evenodd'
@@ -547,7 +565,7 @@ const Header = () => {
             />
           </svg>
           Back to Menu
-        </div>
+        </div> */}
         <div className='py-[40px] px-[60px]'>
           <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
             <div className='space-y-3 flex flex-col uppercase'>

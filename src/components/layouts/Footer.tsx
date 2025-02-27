@@ -53,9 +53,9 @@ const Accordion = ({ title, children }: { title: string; children: React.ReactNo
 
 const Footer = () => {
   return (
-    <footer className='bg-[#c5c6bc] pt-20 pb-10'>
+    <footer className='bg-[#c5c6bc] pt-5 pb-10'>
       <div className='px-4 lg:px-20 2xl:mx-[180px] 2xl:px-0'>
-        <img src={footerLogo} alt='footerLogo' className='mx-auto size-[100px] mb-20' />
+        <img src={footerLogo} alt='footerLogo' className='mx-auto size-[100px] lg:my-10' />
         <div className='grid md:grid-cols-4 gap-x-10 gap-y-8 mb-20 '>
           <div>
             <Accordion title='Get to know us'>
@@ -105,7 +105,7 @@ const Footer = () => {
             <p className='mb-4'>Get inspired</p>
             <p className='text-sm'>Đặt chỗ & Liên hệ nhanh</p>
             <Link to={'/contact-now'}><button className='mt-4 px-5 py-2 border border-black hover:opacity-60 transition-all duration-300'>
-              SUBSCRIBE
+              Đặt ngay
             </button></Link>
           </div>
         </div>

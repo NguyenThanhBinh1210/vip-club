@@ -58,13 +58,13 @@ const More = () => {
 
 
         <div className='bg-[#f0f1eb] py-16'>
-          <h3 className='uppercase text-[25px] mb-4 pl-4 lg:hidden'>Exclusive Benefits With The Sands Rewards Club</h3>
+          <h3 className='uppercase text-[25px] mb-4 pl-4 lg:hidden'>Exclusive Benefits With Let's Vip Rewards Club</h3>
           <div className=' gap-x-10 lg:grid-cols-3 grid 2xl:grid-cols-5'>
             <div className='lg:col-span-2 2xl:col-span-3'>
               <img src={rewardsClub} alt='rewardsClub' className='h-max w-max' />
             </div>
             <div className='lg:col-span-1 2xl:col-span-2 2xl:pr-[180px] pl-4 pr-[34px] lg:p-0'>
-              <h3 className='uppercase text-[32px] hidden lg:block'>Exclusive Benefits With The Sands Rewards Club</h3>
+              <h3 className='uppercase text-[32px] hidden lg:block'>Exclusive Benefits With Let's Vip Rewards Club</h3>
               <p className='py-4 uppercase'>Sign up to earn as you play</p>
               <p className='text-[#333333] mb-4'>
                 As a Sands Rewards Club member, you earn Sands Points and Sands Dollars on your Casino play. You may

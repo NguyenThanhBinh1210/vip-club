@@ -98,7 +98,7 @@ const SkyparkObservationDeck = () => {
             fontSize='text-lg'
           >
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>
@@ -108,7 +108,7 @@ const SkyparkObservationDeck = () => {
           </Accordion>
           <Accordion size='sm' line title='What happens if it rains?' unuppercase fontSize='text-lg'>
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>
@@ -118,7 +118,7 @@ const SkyparkObservationDeck = () => {
           </Accordion>
           <Accordion size='sm' line title='Is there a souvenir shop?' unuppercase fontSize='text-lg'>
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>
@@ -134,7 +134,7 @@ const SkyparkObservationDeck = () => {
             fontSize='text-lg'
           >
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>
@@ -150,7 +150,7 @@ const SkyparkObservationDeck = () => {
             fontSize='text-lg'
           >
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>
@@ -166,7 +166,7 @@ const SkyparkObservationDeck = () => {
             fontSize='text-lg'
           >
             <p className='mb-5'>
-              The Sands SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
+              Let's Vip SkyPark — including the Observation Deck — is open from 10am to 10pm. Non Peak Hours: 10am –
               4.30pm (Last entry 4pm), Peak Hours: 5pm – 10pm (Last entry 9.30pm).
             </p>
             <p className='mb-5'>

@@ -32,7 +32,7 @@ const useRouteElements = () => {
       )
     },
     {
-      path: '/about',
+      path: '/about-us',
       element: (
         <HomeLayout>
           <About />

@@ -21,34 +21,57 @@ const About = () => {
         <div className='max-w-[888px] mx-auto px-[33px] lg:px-0'>
           <h1 className='uppercase text-[40px] text-center mb-10'>Lời giới thiệu</h1>
 
-          <p className='text-center text-[16px]  font-bold mb-10'>
-            Giới thiệu về Let’s Win VIP Club
-          </p>
+          <p className='text-center text-[16px]  font-bold mb-10'>Giới thiệu về Let’s Win VIP Club</p>
           <p className=' text-[16px] mb-4'>
-            Chào mừng bạn đến với Let’s Win VIP Club – điểm đến dành riêng cho những ai tìm kiếm trải nghiệm giải trí đỉnh cao và dịch vụ thượng lưu. Với không gian sang trọng, dịch vụ chuyên nghiệp và các trò chơi đẳng cấp, chúng tôi cam kết mang lại những khoảnh khắc khó quên cho từng vị khách.
+            Chào mừng bạn đến với Let’s Win VIP Club – điểm đến dành riêng cho những ai tìm kiếm trải nghiệm giải trí
+            đỉnh cao và dịch vụ thượng lưu. Với không gian sang trọng, dịch vụ chuyên nghiệp và các trò chơi đẳng cấp,
+            chúng tôi cam kết mang lại những khoảnh khắc khó quên cho từng vị khách.
           </p>
 
+          <p className='text-left text-[16px] mb-4'>Tại Let’s Win VIP Club, bạn sẽ được tận hưởng:</p>
           <p className='text-left text-[16px] mb-4'>
-            Tại Let’s Win VIP Club, bạn sẽ được tận hưởng:
+            <strong>• Sảnh VIP tại Hồ Tràm Casino:</strong> Không gian riêng tư với các trò chơi dành riêng cho khách
+            VIP, mang lại sự thoải mái và đẳng cấp.
           </p>
           <p className='text-left text-[16px] mb-4'>
-            <strong>• Sảnh VIP tại Hồ Tràm Casino:</strong> Không gian riêng tư với các trò chơi dành riêng cho khách VIP, mang lại sự thoải mái và đẳng cấp.
+            <strong>• Khu VIP tại Hoiana:</strong> Thiết kế tinh tế cùng dịch vụ cá nhân hóa, mang đến trải nghiệm độc
+            đáo và sang trọng.
           </p>
           <p className='text-left text-[16px] mb-4'>
-            <strong>• Khu VIP tại Hoiana:</strong> Thiết kế tinh tế cùng dịch vụ cá nhân hóa, mang đến trải nghiệm độc đáo và sang trọng.
-          </p>
-          <p className='text-left text-[16px] mb-4'>
-            <strong>• Club Poker tại khách sạn Danaciti:</strong> Điểm hẹn lý tưởng cho những người yêu thích Poker, với các giải đấu chuyên nghiệp và bàn chơi cao cấp.
-          </p>
-
-          <p className=' text-[16px] mb-4'>
-            Đặc biệt, chúng tôi cung cấp dịch vụ chăm sóc khách hàng 24/7 qua hotline trực tiếp, sẵn sàng hỗ trợ và đáp ứng mọi nhu cầu của bạn.
+            <strong>• Club Poker tại khách sạn Danaciti:</strong> Điểm hẹn lý tưởng cho những người yêu thích Poker, với
+            các giải đấu chuyên nghiệp và bàn chơi cao cấp.
           </p>
 
           <p className=' text-[16px] mb-4'>
-            Hãy gia nhập cộng đồng thượng lưu tại Let’s Win VIP Club – nơi hội tụ của những trải nghiệm đỉnh cao và những khoảnh khắc chiến thắng!
+            Đặc biệt, chúng tôi cung cấp dịch vụ chăm sóc khách hàng 24/7 qua hotline trực tiếp, sẵn sàng hỗ trợ và đáp
+            ứng mọi nhu cầu của bạn.
           </p>
 
+          <p className=' text-[16px] mb-4'>
+            Hãy gia nhập cộng đồng thượng lưu tại Let’s Win VIP Club – nơi hội tụ của những trải nghiệm đỉnh cao và
+            những khoảnh khắc chiến thắng!
+          </p>
+          <p className='text-center text-3xl pt-5 mb-10'>WHY CHOOSE LET’S WIN VIP CLUB?</p>
+
+          <p className='text-left text-[16px]   mb-3'>
+            ✔ Exclusive VIP spaces with lavish interiors, ensuring absolute comfort.
+          </p>
+          <p className='text-left text-[16px]   mb-3'>
+            ✔ Personalized services, with a dedicated professional team providing 24/7 support.
+          </p>
+          <p className='text-left text-[16px]   mb-3'>
+            ✔ Exclusive rewards & luxury gifts, reserved for Let’s Win VIP members.
+          </p>
+          <p className='text-left text-[16px]   mb-3'>
+            ✔ Top-tier privacy and security, guaranteeing a safe and luxurious entertainment experience.
+          </p>
+          <p className='text-center text-[16px]  font-bold mb-3 mt-10'>
+            Join Let’s Win VIP Club today and indulge in an unmatched luxury experience!
+          </p>
+
+          <p className='text-center text-[16px]  font-bold mb-3'>
+            📞 VIP Customer Service Hotline (24/7): [Phone Number]
+          </p>
         </div>
       </div>
     </div>

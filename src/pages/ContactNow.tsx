@@ -21,8 +21,8 @@ const ContactNow = () => {
 
           </h2>
           <div className='bg-[#f0f1eb] border border-[#c5c6bc] md:grid grid-cols-2  mt-10 space-y-3 md:space-y-0 p-5 max-w-[700px] mx-auto gap-4 mb-10'>
-            <input type='text' placeholder='Full Name' className=' p-2 border-b border-[#c5c6bc] ' />
-            <input type='text' placeholder='Number phone' className=' p-2 border-b border-[#c5c6bc] ' />
+            <input type='text' placeholder='Full Name' className='w-full p-2 border-b border-[#c5c6bc] ' />
+            <input type='text' placeholder='Number phone' className='w-full p-2 border-b border-[#c5c6bc] ' />
           </div>
           <ButtonBlack onClick={() => setStage(2)} title='Submit' />
         </div>}
