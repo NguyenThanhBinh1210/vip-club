@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '~/assets/logo-01.png'
+import { Select } from '../Select'
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true)
@@ -61,7 +62,22 @@ const Header = () => {
       }
     }
   }, [])
+  const [selectedLanguage, setSelectedLanguage] = useState('vi')
+  const initialData = [
+    {
+      name: 'Tiếng Anh',
+      value: 'en'
+    },
+    {
+      name: 'Tiếng Việt',
+      value: 'vi'
+    },
+    {
+      name: 'Tiếng Hàn',
+      value: 'ko'
+    },
 
+  ]
   return (
     <>
       <header
@@ -185,12 +201,10 @@ const Header = () => {
                 <path d='M2 12H22' />
               </svg>
             </button>
-            {/* <Link onClick={toggleMenu} to={'/expo'} className={` flex items-center gap-4 uppercase group `}>
-              Expo and Convention{' '}
-            </Link> */}
             <Link onClick={toggleMenu} to={'/about-us'} className={` flex items-center gap-4 uppercase group `}>
               About us
             </Link>
+            <Select initialView={initialData} selected={selectedLanguage} setSelected={setSelectedLanguage} />
           </div>
         </div>
       </div>
@@ -247,234 +261,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'shop' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
-          }`}
-      >
-        {/* <div
-          onClick={() => setIsNavOpen('')}
-          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
-        >
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
-            <path
-              fillRule='evenodd'
-              d='M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z'
-              clipRule='evenodd'
-            />
-          </svg>
-          Back to Menu
-        </div> */}
-        <div className='py-[40px] px-[60px]'>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/shopping'} className='hover:opacity-65'>
-                The Shoppes
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <p className='text-sm text-[#666666] mb-5'>Browse by category</p>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                Women's Fashion
-              </Link>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                Men's Fashion
-              </Link>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                Jewellery
-              </Link>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                Watches
-              </Link>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                Lifestyle & Gifts
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/shopping/store-directory'} className='hover:opacity-65'>
-                View all stores
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'dine' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
-          }`}
-      >
-        {/* <div
-          onClick={() => setIsNavOpen('')}
-          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
-        >
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
-            <path
-              fillRule='evenodd'
-              d='M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z'
-              clipRule='evenodd'
-            />
-          </svg>
-          Back to Menu
-        </div> */}
-        <div className='py-[40px] px-[60px]'>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/restaurants'} className='hover:opacity-65'>
-                Restaurants & Bars
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/restaurants/rooftop-dining'} className='hover:opacity-65'>
-                Rooftop Dining
-              </Link>
-              <Link
-                onClick={toggleMenu}
-                to={'/guides/party-drinks-mbs/waterfront-bars-marina-bay'}
-                className='hover:opacity-65'
-              >
-                Waterfront Dining
-              </Link>
-              <Link onClick={toggleMenu} to={'/restaurants/fine-dining'} className='hover:opacity-65'>
-                Fine Dining
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Private Dining
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Social Hour
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                View all restaurants
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                View all bars and nightclubs
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'seedo' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
-          }`}
-      >
-        {/* <div
-          onClick={() => setIsNavOpen('')}
-          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
-        >
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
-            <path
-              fillRule='evenodd'
-              d='M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z'
-              clipRule='evenodd'
-            />
-          </svg>
-          Back to Menu
-        </div> */}
-        <div className='py-[40px] px-[60px]'>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                See & Do
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <p className='text-sm text-[#666666] mb-5'>Attractions</p>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                ArtScience Museum
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                SkyPark Observation Deck
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Digital Light Canvas
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Spectra – A Light & Water Show
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Sampan Rides
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <p className='text-sm text-[#666666] mb-5'>Entertainment</p>
 
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Shows & Concerts
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <p className='text-sm text-[#666666] mb-5'>Nightlife</p>
 
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Marquee Nightclub
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                View all Bars and Nightclubs
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'paiza' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
-          }`}
-      >
-        {/* <div
-          onClick={() => setIsNavOpen('')}
-          className='lg:hidden absolute top-[6rem] left-10 uppercase text-sm flex items-center gap-2 cursor-pointer hover:opacity-65 transition-all duration-300'
-        >
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='size-4'>
-            <path
-              fillRule='evenodd'
-              d='M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z'
-              clipRule='evenodd'
-            />
-          </svg>
-          Back to Menu
-        </div> */}
-        <div className='py-[40px] px-[60px]'>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Paiza
-              </Link>
-            </div>
-          </div>
-          <div className='pt-2 pb-5 border-t border-[#c5c6bc]'>
-            <div className='space-y-3 flex flex-col uppercase'>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                The Paiza Collection
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Paiza Sky Residence
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Paiza One
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Paiza Golf
-              </Link>
-              <Link onClick={toggleMenu} to={'/'} className='hover:opacity-65'>
-                Paiza Wine
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
       <div
         className={`fixed  top-0 bg-[#e1e2d6] w-full lg:w-[360px] h-full pt-[60px] z-40 transition-all duration-700 ${isNavOpen === 'Rewards' ? 'opacity-100 visible lg:left-[360px]' : 'opacity-0 invisible left-0'
           }`}
