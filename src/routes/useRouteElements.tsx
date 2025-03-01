@@ -2,7 +2,6 @@ import { useRoutes } from 'react-router-dom'
 import NotFound from '~/pages/NotFound'
 import HomeLayout from '~/layouts/HomeLayout'
 import Home from '~/pages/Home'
-import TheSandsCollection from '~/pages/Stay/TheSandsCollection'
 import ThePaizaCollection from '~/pages/Stay/ThePaizaCollection'
 import Packages from '~/pages/Stay/Packages'
 import SkyparkObservationDeck from '~/pages/Stay/SkyparkObservationDeck'
@@ -18,6 +17,13 @@ import WhatOnAtMbs from '~/pages/WhatOnAtMbs'
 import Booking from '~/pages/Booking'
 import About from '~/pages/About'
 import ContactNow from '~/pages/ContactNow'
+import Lifestyle from '~/pages/Rewards/Lifestyle'
+import MembersPrivileges from '~/pages/Rewards/MembersPrivileges'
+import Signup from '~/pages/Signup'
+import SignUpOTPVerification from '~/pages/SignUpOTPVerification'
+import SignupSuccessful from '~/pages/SignupSuccessful'
+import Login from '~/pages/Login'
+import LoginLayout from '~/layouts/LoginLayout'
 
 const useRouteElements = () => {
   const routeElements = useRoutes([
@@ -48,10 +54,50 @@ const useRouteElements = () => {
       )
     },
     {
-      path: '/hotel/the-sands-collection',
+      path: '/signup',
+      element: (
+        <LoginLayout>
+          <Signup />
+        </LoginLayout>
+      )
+    },
+    {
+      path: '/login',
+      element: (
+        <LoginLayout>
+          <Login />
+        </LoginLayout>
+      )
+    },
+    {
+      path: '/SignUpOTPVerification',
+      element: (
+        <LoginLayout>
+          <SignUpOTPVerification />
+        </LoginLayout>
+      )
+    },
+    {
+      path: '/signup-successful',
+      element: (
+        <LoginLayout>
+          <SignupSuccessful />
+        </LoginLayout>
+      )
+    },
+    {
+      path: '/lifestyle',
       element: (
         <HomeLayout>
-          <TheSandsCollection />
+          <Lifestyle />
+        </HomeLayout>
+      )
+    },
+    {
+      path: '/members-privileges',
+      element: (
+        <HomeLayout>
+          <MembersPrivileges />
         </HomeLayout>
       )
     },
